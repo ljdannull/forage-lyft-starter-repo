@@ -25,7 +25,7 @@ class CarFactory:
     def create_palindrome(self, current_date, last_service_date, warning_light_on):
         car = self._get_car(last_service_date)
         car.engine = SternmanEngine(warning_light_on)
-        car.battery = NubbinBattery(current_date, last_service_date) # should be spindler
+        car.battery = SpindlerBattery(current_date, last_service_date) # should be spindler
         return car
     
     def create_rorschach(self, current_date, last_service_date, current_mileage, last_service_mileage):
