@@ -7,4 +7,4 @@ class Car(Serviceable):
         self.last_service_date = last_service_date
 
     def needs_service(self):
-        return self.engine.needs_service() or self.battery.needs_service()
+        return self.engine.needs_service() or self.battery.needs_service() or self.tires.needs_service()
